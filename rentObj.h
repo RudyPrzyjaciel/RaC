@@ -3,10 +3,11 @@
 #include <iostream>
 #include <string>
 
+
 class rentObj
 {
-private:
-    bool accesible;
+protected:
+    bool accessible;
     int rentTimeLeft;
     int rentTimeActual;
     std::string type;
@@ -14,11 +15,13 @@ private:
     std::string specialData;
 
 public:
-    int checkTimeLeft();
-    int checkTimeSpent();
+    rentObj();
+    int TimeLeft();
+    int TimeSpent();
     void addTime(int);
     void returnObj();
     void editData();
+    void getInfo();
 };
 
 class rentCar : public rentObj
@@ -29,7 +32,15 @@ protected:
     int fuelAtRent;
     int fuel;
 public:
+    rentCar();
     int checkFuel();
     void editData();
     void returnObj();
+    void getInfo();
 };
+
+// class rentInterface
+// {
+// public:
+
+// };
