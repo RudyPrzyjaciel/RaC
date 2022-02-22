@@ -7,5 +7,8 @@ rentSession:
 rentObj.o: rentObj.cpp
 	g++ -c rentObj.cpp
 
+rentCar.o: rentCar.cpp
+	g++ -c rentCar.cpp
+
 main.o: main.cpp
 	g++ -c main.cpp
