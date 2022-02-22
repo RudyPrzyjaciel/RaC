@@ -1,5 +1,6 @@
 #include "main.h"
 #include "rentObj.h"
+#include "rentCar.h"
 
 void spacer()
 {
@@ -20,6 +21,17 @@ int main()
 	int timeToAdd = 10;
 	obj1.addTime(&timeToAdd);
 	obj1.getInfo();
+
+	spacer();
+
+	rentCar car;
+
+	car.getInfo();
+	car.rent();
+	spacer();
+	car.addTime(&timeToAdd);
+	car.getInfo();
+
 
 	/*rentCar car1;
 	rentCar car2;

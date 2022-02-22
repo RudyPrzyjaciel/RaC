@@ -19,11 +19,11 @@ public:
     rentObj();
     int timeLeft();
     int timeSpent();
-    int rent();
     void addTime(int*);
-    void returnObj();
-    void editData();
-    void getInfo();
+    virtual int rent();
+    virtual void returnObj();
+    virtual void editData();
+    virtual void getInfo();
 };
 //
 //class rentCar : public rentObj

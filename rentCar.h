@@ -5,7 +5,6 @@
 #include <string>
 
 
-
 class rentCar : public rentObj
 {
 protected:
@@ -15,8 +14,10 @@ protected:
     int fuel;
 public:
     rentCar();
+    ~rentCar();
     int checkFuel();
-    void editData();
-    void returnObj();
-    void getInfo();
+    int rent() override;
+    void editData() override;
+    void returnObj() override;
+    void getInfo() override;
 };

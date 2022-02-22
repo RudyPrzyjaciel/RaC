@@ -63,6 +63,11 @@ int rentObj::rent()
     }
 }
 
+void rentObj::editData()
+{
+    std::cout << "Data edit method" << std::endl;
+}
+
 //
 //rentCar::rentCar()
 //{
